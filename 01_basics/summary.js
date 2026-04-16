@@ -35,3 +35,26 @@ const myFunction=function(){
 // console.log(typeof myFunction);
 
 // console.log(typeof anotherId);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Memory
+// Stack(Primitive) the variable declared, we get copy of that, Heap(Non-Primitive) the variable declared, we got reference
+
+//Stack:
+let myName="Pratham Gupta"
+let anothername=myName
+anothername="Yashi Gupta"
+
+console.log(myName);
+console.log(anothername);
+
+//Heap:
+let userone={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let usertwo=userone
+usertwo.email="Pratham@google.com"
+console.log(userone.email);
+console.log(usertwo.email);
