@@ -32,3 +32,4 @@ console.log("B ",myarr);
 const myn2=myarr.splice(1,3);//includes last range and array is changed that is the spliced portion separates from the original array 
 console.log("C ",myarr);
 console.log(myn2);
+
