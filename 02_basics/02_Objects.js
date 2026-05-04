@@ -105,4 +105,5 @@ const users=[
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLogged')); //checks if the property exists in the object or not 
+// console.log(tinderUser.hasOwnProperty('isLogged')); //checks if the property exists in the object or not 
+
