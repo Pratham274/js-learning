@@ -8,6 +8,10 @@ let age=21
 let isLoggedIn=false
 let state=null
 var x this is wrong 
+var can be redclared 
+but let and const not 
+const cannot reassigned 
+but let and var can 
 
 //PRIMITIVE
 //number=> 2^53
@@ -16,7 +20,7 @@ var x this is wrong
 //boolean => true/false
 //null=>standalone value it is object type 
 //undefined=> variable is declared but value is not defined
-//symbol=> unique
+//symbol=> unique first letter should be capital verification in same data bifurcate to get efficient response   ex a="1" addon afterwards so cant be used 
 
 //object
 //console.log(typeof "Pratham")
