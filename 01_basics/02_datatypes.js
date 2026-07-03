@@ -7,7 +7,7 @@ let name="Pratham"
 let age=21
 let isLoggedIn=false
 let state=null
-
+var x this is wrong 
 
 //PRIMITIVE
 //number=> 2^53
