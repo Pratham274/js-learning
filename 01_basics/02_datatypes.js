@@ -14,7 +14,7 @@ var x this is wrong
 //bigInt
 //string=>"" ,''
 //boolean => true/false
-//null=>standalone value
+//null=>standalone value it is object type 
 //undefined=> variable is declared but value is not defined
 //symbol=> unique
 
