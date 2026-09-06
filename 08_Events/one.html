@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: #414141; color:aliceblue;">
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="human" src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt=""></li>
+            <li><img width="200px" id="hotairballoon" src="https://static.vecteezy.com/system/resources/thumbnails/083/933/835/small/beautiful-and-inspiring-picture-detailing-a-bright-hot-air-balloon-over-river-pure-cozy-perfect-for-creatives-moods-stock-image-free-photo.jpeg" alt=""></li>
+            <li><img width="200px" id="girl" src="https://static.vecteezy.com/system/resources/thumbnails/055/621/001/small/closeup-portrait-of-a-young-woman-with-freckles-and-snow-on-her-face-surrounded-by-pine-branches-photo.jpg" alt=""></li>
+            <li><img width="200px" id="tiger" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanF6GQIUoXHkdMxSEjn1M0-apMwKj6vkYUvIU_LD41A&s" alt="" onclick="alert('tiger')"></li>
+            <li><img width="200px" id="rose" src="https://static.vecteezy.com/system/resources/thumbnails/060/117/855/small/red-rose-is-the-main-focus-of-the-image-with-a-blue-background-and-a-few-other-flowers-in-the-background-the-rose-is-the-most-prominent-and-beautiful-flower-in-the-picture-photo.jpeg" alt=""></li>
+            <li><a style="color:aliceblue; "href="https://google.com" id="google">Google</a></li>
+        </ul>
+        <script>
+            // document.getElementById('girl').onclick=function(){
+            //     alert('You clicked on girl')
+            // }
+            //attachEvent()
+            //jQuery-on
+            //type,timestamp,defaultPrevented
+            //target,toElement,srcElement,currentTarget
+            //clientX,clientY,screenX,screenY
+            //altkey,ctrlkey,shiftkey,keycode
+
+            // document.getElementById('girl').addEventListener('click',function(){
+            //     alert("You clicked on girl again")
+            // })
+
+            // document.getElementById('hotairballoon').addEventListener('click',function(e){
+            //     console.log(e);
+            // }, false)
+
+            // document.getElementById('images').addEventListener('click',function(e){
+            //     console.log("clicked inside the ul");
+            // }, false)
+
+            // document.getElementById('girl').addEventListener('click',function(e){
+            //     console.log("clicked girl");
+            //     e.stopPropagation()
+            // }, false)
+
+            // document.getElementById('google').addEventListener('click',function(e){
+            //     e.preventDefault();
+            //     e.stopPropagation();
+            //     console.log('Google clicked')
+            // },false)
+
+            // document.querySelector('#images').addEventListener('click',function(e){
+            //     console.log(e.target.parentNode);
+            //     let removeIt=e.target.parentNode
+            //     removeIt.remove();
+            //     // removeIt.parentNode.removeChild(removeIt);
+            // },false)
+
+            document.querySelector('#images').addEventListener('click',function(e){
+                console.log(e.target.tagName);
+                if(e.target.tagName==='IMG'){
+                    console.log(e.target.id);
+                    let removeIt=e.target.parentNode
+                    removeIt.remove();
+                }
+                // removeIt.parentNode.removeChild(removeIt);
+            },false)
+        </script>
+    </div>
+</body>
+</html>
