@@ -7,5 +7,25 @@
 </head>
 <body>
     <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+    <script>
+        // setTimeout(function(){
+        //     console.log("Pratham");
+        // },2000)
+        const sayPratham=function(){
+            console.log("Pratham");
+        }
+        const changeText=function(){
+            document.querySelector('h1').
+            innerHTML="I am going to get a job soon"
+        }
+        const changeMe=setTimeout(changeText,2000)
+
+        document.querySelector('#stop').
+        addEventListener('click', function(){
+            clearTimeout(changeMe)
+            console.log("STOPPED")
+        })
+    </script>
 </body>
 </html>
